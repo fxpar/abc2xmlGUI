@@ -310,7 +310,7 @@ JrlcjkKhkGxyXCu+72+XSqV66juJzb4Nw+Fw5y/6itAbDV2yWAAAAABJRU5ErkJggg=='''
                 ifile += ".abc"
         filename = filedialog.asksaveasfile(initialfile = ifile, initialdir = idir, title = _("Select file"), filetypes = outFiles)
         if filename is not None:
-            filename.write(content)
+            filename.write(foo.encode(content))
 
 
     def saveTextBox(self):
